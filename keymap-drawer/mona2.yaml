@@ -87,91 +87,91 @@ layers:
   - {t: RET, h: NUM_W}
   - {t: ESC, h: BLE_W}
   NUM_W:
-  - ESCAPE
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '='
-  - '7'
-  - '8'
-  - '9'
-  - '*'
-  - TAB
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - '%'
-  - '0'
-  - '4'
-  - '5'
-  - '6'
-  - '-'
-  - '|'
-  - (
-  - )
-  - '['
-  - ']'
-  - {t: ▽, type: trans}
-  - +
-  - .
   - '1'
   - '2'
   - '3'
+  - '4'
+  - '5'
+  - ''
+  - Sft+UP
+  - UP
+  - ''
+  - ''
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''
+  - HOME
+  - LEFT
+  - DOWN
+  - RIGHT
+  - LALT
+  - Sft+;
+  - '-'
+  - Sft+JP COLON
   - /
+  - .
+  - Sft+-
+  - ''
+  - END
+  - Sft+LEFT
+  - Sft+DOWN
+  - Sft+RIGHT
+  - LSHFT
   - LCTRL
-  - LEFT GUI
-  - LEFT ALT
+  - LWIN
+  - LALT
+  - '&macro_parens'
+  - F10
+  - F2
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ENTER
-  - {t: BACKSPACE, type: held}
-  - RIGHT SHIFT
+  - {t: Alt+ENTER, type: held}
+  - ''
   NUM_M:
-  - ESCAPE
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '='
-  - '7'
-  - '8'
-  - '9'
-  - '*'
-  - TAB
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - '%'
-  - '0'
-  - '4'
-  - '5'
-  - '6'
-  - '-'
-  - '|'
-  - (
-  - )
-  - '['
-  - ']'
-  - {t: ▽, type: trans}
-  - +
-  - .
   - '1'
   - '2'
   - '3'
+  - '4'
+  - '5'
+  - ''
+  - Sft+UP
+  - UP
+  - ''
+  - ''
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''
+  - HOME
+  - LEFT
+  - DOWN
+  - RIGHT
+  - LALT
+  - Sft+;
+  - '-'
+  - Sft+JP COLON
   - /
-  - LEFT GUI
-  - LEFT GUI
-  - LEFT ALT
+  - .
+  - Sft+-
+  - ''
+  - END
+  - Sft+LEFT
+  - Sft+DOWN
+  - Sft+RIGHT
+  - LSHFT
+  - LCTRL
+  - LWIN
+  - LALT
+  - '&macro_parens'
+  - F10
+  - F2
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ENTER
-  - BACKSPACE
-  - RIGHT SHIFT
+  - Alt+ENTER
+  - ''
   MOUSE_W:
   - {t: ESCAPE, type: held}
   - Ctl+Z
