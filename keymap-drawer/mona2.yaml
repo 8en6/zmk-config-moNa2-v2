@@ -44,7 +44,7 @@ layers:
   - {t: RET, h: NUM_W}
   - {t: ESC, h: BLE_W}
   MAC:
-  - Q
+  - {t: Q, h: MOUSE_W}
   - W
   - E
   - R
@@ -52,40 +52,40 @@ layers:
   - Y
   - U
   - I
-  - O
+  - {t: O, h: MOUSE_W}
   - P
-  - A
+  - {t: A, h: LALT}
   - S
   - D
   - F
   - G
-  - '-'
+  - F13
   - H
   - J
-  - K
-  - L
-  - {t: ;, h: MOUSE_W}
-  - {t: Z, h: LEFT SHIFT}
+  - {t: K, h: SCRL_W}
+  - {t: L, h: MOUSE_W}
+  - {t: '-', h: LALT}
+  - {t: Z, h: LSHFT}
   - X
   - C
   - V
   - B
-  - ':'
-  - ;
+  - F14
+  - F15
   - N
   - M
   - ','
   - .
-  - {t: /, h: BLE_M}
-  - LEFT GUI
-  - LEFT WIN
+  - {t: /, h: LSHFT}
+  - LCTRL
+  - LWIN
   - LEFT ALT
-  - {t: '`', h: NUM_M}
-  - {t: SPACE, h: MOUSE_M}
-  - {t: '-', h: SCRL_M}
-  - ENTER
-  - BACKSPACE
-  - RIGHT SHIFT
+  - {t: INT5, h: FN_W}
+  - {t: SPACE, h: MOUSE_W}
+  - {t: INT4, h: SCRL_W}
+  - {t: BSPC, h: SCRL_W}
+  - {t: RET, h: NUM_W}
+  - {t: ESC, h: BLE_W}
   NUM_W:
   - ESCAPE
   - '!'
@@ -166,7 +166,7 @@ layers:
   - LEFT GUI
   - LEFT GUI
   - LEFT ALT
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ENTER
@@ -253,7 +253,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ENTER
   - BACKSPACE
@@ -320,7 +320,7 @@ layers:
   - OUT TOG
   - {t: ▽, type: trans}
   - '&mkp MB1'
-  - {t: ▽, type: trans}
+  - {type: held}
   - '&mkp MB2'
   - {t: ▽, type: trans}
   - LEFT SHIFT
@@ -340,7 +340,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -506,7 +506,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: BT CLR, type: held}
+  - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
