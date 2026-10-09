@@ -299,9 +299,9 @@ sensor-bindings = <&rsr_default>;
 scroll_win {
 display-name = "SCRL_W";
 bindings = <
-&kp LS(N7)    &kp LS(N2)    &kp at      &none          &kp LS(SEMI)                                        &kp at       &kp LS(0x87) &kp LS(N8)       &kp LS(N9)  &kp LS(N5)
-&kp AT        &kp SEMI      &kp LS(N4)  &kp at         &kp at                                 &kp at       &kp LS(N3)   &mkp LCLK    &kp at           &mkp RCLK   &kp LS(MINUS)
-&kp LSHFT     &none         &kp at      &none          &kp LS(N1)       &kp at                &kp at       &kp LS(N6)   &kp MINUS    &kp LS(COMMA)    &kp LS(DOT) &kp LS(FSLH)
+&kp LS(N7)    &kp LS(N2)    &kp A      &none          &kp LS(SEMI)                                        &kp A       &kp LS(0x87) &kp LS(N8)       &kp LS(N9)  &kp LS(N5)
+&kp A        &kp SEMI      &kp LS(N4)  &kp at         &kp A                                 &kp A       &kp LS(N3)   &mkp LCLK    &kp A           &mkp RCLK   &kp LS(MINUS)
+&kp LSHFT     &none         &kp A      &none          &kp LS(N1)       &kp A                &kp A       &kp LS(N6)   &kp MINUS    &kp LS(COMMA)    &kp LS(DOT) &kp LS(FSLH)
 &kp LCTRL     &kp LWIN      &kp LALT    &trans         &trans          &trans                 &trans       &kp LC(ENTER)                                          &trans
 >;
 
@@ -311,9 +311,9 @@ sensor-bindings = <&rsr_default>;
 scroll_mac {
 display-name = "SCRL_M";
 bindings = <
-&kp LS(N7)    &kp LS(N2)    &kp at      &none          &kp LS(SEMI)                                        &kp at       &kp LS(0x87) &kp LS(N8)       &kp LS(N9)  &kp LS(N5)
-&kp AT        &kp SEMI      &kp LS(N4)  &kp at         &kp at                                 &kp at       &kp LS(N3)   &mkp LCLK    &kp at           &mkp RCLK   &kp LS(MINUS)
-&kp LSHFT     &none         &kp at      &none          &kp LS(N1)       &kp at                &kp at       &kp LS(N6)   &kp MINUS    &kp LS(COMMA)    &kp LS(DOT) &kp LS(FSLH)
+&kp LS(N7)    &kp LS(N2)    &kp A      &none          &kp LS(SEMI)                                        &kp A       &kp LS(0x87) &kp LS(N8)       &kp LS(N9)  &kp LS(N5)
+&kp A        &kp SEMI      &kp LS(N4)  &kp at         &kp A                                 &kp A       &kp LS(N3)   &mkp LCLK    &kp A           &mkp RCLK   &kp LS(MINUS)
+&kp LSHFT     &none         &kp A      &none          &kp LS(N1)       &kp A                &kp A       &kp LS(N6)   &kp MINUS    &kp LS(COMMA)    &kp LS(DOT) &kp LS(FSLH)
 &kp LCTRL     &kp LWIN      &kp LALT    &trans         &trans          &trans                 &trans       &kp LC(ENTER)                                          &trans
 >;
 
