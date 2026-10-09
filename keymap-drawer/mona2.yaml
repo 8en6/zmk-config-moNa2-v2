@@ -77,7 +77,7 @@ layers:
   - ','
   - .
   - {t: /, h: LSHFT}
-  - LCTRL
+  - LGUI
   - LWIN
   - LEFT ALT
   - {t: INT5, h: FN_W}
@@ -163,7 +163,7 @@ layers:
   - Sft+DOWN
   - Sft+RIGHT
   - LSHFT
-  - LCTRL
+  - LGUI
   - LWIN
   - LALT
   - '&macro_parens'
@@ -249,7 +249,7 @@ layers:
   - Ctl+Y
   - ''
   - LSHFT
-  - LCTRL
+  - LGUI
   - LWIN
   - LALT
   - {t: ▽, type: trans}
@@ -335,7 +335,7 @@ layers:
   - Sft+,
   - Sft+.
   - Sft+/
-  - LCTRL
+  - LGUI
   - LWIN
   - LALT
   - {t: ▽, type: trans}
@@ -421,7 +421,7 @@ layers:
   - Sft+DOWN
   - Sft+RIGHT
   - LSHFT
-  - LCTRL
+  - LGUI
   - LWIN
   - LALT
   - {t: ▽, type: trans}
@@ -507,7 +507,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LCTRL
+  - LGUI
   - LWIN
   - LALT
   - {t: ▽, type: trans}
