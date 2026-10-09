@@ -299,10 +299,10 @@ sensor-bindings = <&rsr_default>;
 scroll_win {
 display-name = "SCRL_W";
 bindings = <
-&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4                          &trans  &trans  &trans  &trans  &trans
-&trans          &trans        &trans        &trans          &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR_ALL  &bt BT_CLR    &trans        &trans          &trans          &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL       &kp LWIN      &kp LALT      &trans          &trans          &trans        &trans  &trans                          &trans
+&kp LS(N7)    &kp LS(N2)    &kp at      &none           &kp LS(SEMI)                                                 &kp at   &kp LS(0x87) &kp LS(N8)       &kp LS(N9)  &kp LS(N5)
+&kp AT        &kp SEMI      &kp LS(N4)    &kp at &kp at  &kp LG(LS(S))         &kp at      &kp LS(N3)   &mkp LCLK    &kp at &mkp RCLK   &kp LS(MINUS)
+&kp LSHFT     &none         &kp at  &none           &kp LS(N1)       &kp at   &kp at   &kp LS(N6)   &kp MINUS    &kp LS(COMMA)    &kp LS(DOT) &kp LS(FSLH)
+&kp LCTRL     &kp LWIN      &kp LALT      &trans          &trans           &trans                &trans      &kp LC(ENTER)                                                    &trans
 >;
 
 sensor-bindings = <&rsr_default>;
@@ -311,10 +311,10 @@ sensor-bindings = <&rsr_default>;
 scroll_mac {
 display-name = "SCRL_M";
 bindings = <
-&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4                          &trans  &trans  &trans  &trans  &trans
-&trans          &trans        &trans        &trans          &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR_ALL  &bt BT_CLR    &trans        &trans          &trans          &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL       &kp LWIN      &kp LALT      &trans          &trans          &trans        &trans  &trans                          &trans
+&kp LS(N7)    &kp LS(N2)    &kp at      &none           &kp LS(SEMI)                                                 &kp at   &kp LS(0x87) &kp LS(N8)       &kp LS(N9)  &kp LS(N5)
+&kp AT        &kp SEMI      &kp LS(N4)    &kp at &kp at  &kp LG(LS(S))         &kp at      &kp LS(N3)   &mkp LCLK    &kp at &mkp RCLK   &kp LS(MINUS)
+&kp LSHFT     &none         &kp at  &none           &kp LS(N1)       &kp at   &kp at   &kp LS(N6)   &kp MINUS    &kp LS(COMMA)    &kp LS(DOT) &kp LS(FSLH)
+&kp LCTRL     &kp LWIN      &kp LALT      &trans          &trans           &trans                &trans      &kp LC(ENTER)                                                    &trans
 >;
 
 sensor-bindings = <&rsr_default>;
@@ -343,20 +343,20 @@ bindings = <
 ble_win {
 display-name = "BLE_W";
 bindings = <
-&none      &none                &kp LC(LS(UP))    &kp PG_UP           &none                              &none           &kp LS(UP)       &kp UP            &none          &none
-&kp LALT   &kp LC(LS(LEFT))     &kp LC(LS(DOWN))  &kp LC(LS(RIGHT))   &kp HOME                  &none    &kp HOME        &kp LEFT         &kp DOWN          &kp RIGHT      &kp LALT
-&kp LSHFT  &kp LA(PG_UP)        &kp PG_DN         &kp LA(PG_DN)       &kp END   &kp LG(LS(C))   &none    &kp END         &kp LS(LEFT)     &kp LS(DOWN)      &kp LS(RIGHT)  &kp LSHFT
-&kp LCTRL  &kp LWIN             &kp LALT          &trans              &trans    &trans          &trans   &kp LA(ENTER)                                                     &none
+&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4                          &trans  &trans  &trans  &trans  &trans
+&trans          &trans        &trans        &trans          &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR_ALL  &bt BT_CLR    &trans        &trans          &trans          &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL       &kp LWIN      &kp LALT      &trans          &trans          &trans        &trans  &trans                          &trans
 >;
 };
 
 ble_mac {
 display-name = "BLE_M";
 bindings = <
-&none      &none                &kp LC(LS(UP))    &kp PG_UP           &none                              &none           &kp LS(UP)       &kp UP            &none          &none
-&kp LALT   &kp LC(LS(LEFT))     &kp LC(LS(DOWN))  &kp LC(LS(RIGHT))   &kp HOME                  &none    &kp HOME        &kp LEFT         &kp DOWN          &kp RIGHT      &kp LALT
-&kp LSHFT  &kp LA(PG_UP)        &kp PG_DN         &kp LA(PG_DN)       &kp END   &kp LG(LS(C))   &none    &kp END         &kp LS(LEFT)     &kp LS(DOWN)      &kp LS(RIGHT)  &kp LSHFT
-&kp LCTRL  &kp LWIN             &kp LALT          &trans              &trans    &trans          &trans   &kp LA(ENTER)                                                     &none
+&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4                          &trans  &trans  &trans  &trans  &trans
+&trans          &trans        &trans        &trans          &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR_ALL  &bt BT_CLR    &trans        &trans          &trans          &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL       &kp LWIN      &kp LALT      &trans          &trans          &trans        &trans  &trans                          &trans
 >;
 };
 };
