@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: mona2}
 layers:
   WIN:
-  - Q
+  - {t: Q, h: MOUSE_W}
   - W
   - E
   - R
@@ -9,9 +9,9 @@ layers:
   - Y
   - U
   - I
-  - O
+  - {t: O, h: MOUSE_W}
   - P
-  - A
+  - {t: A, h: LALT}
   - S
   - D
   - F
@@ -19,10 +19,10 @@ layers:
   - F13
   - H
   - J
-  - K
-  - L
-  - ;
-  - {t: Z, h: LEFT SHIFT}
+  - {t: K, h: SCRL_W}
+  - {t: L, h: MOUSE_W}
+  - {t: '-', h: LALT}
+  - {t: Z, h: LSHFT}
   - X
   - C
   - V
@@ -33,16 +33,16 @@ layers:
   - M
   - ','
   - .
-  - /
+  - {t: /, h: LSHFT}
   - LCTRL
-  - LEFT WIN
-  - F16
-  - BACKSPACE
-  - {t: ENTER, h: NUM_W}
-  - {t: '&to_layer_0 LANG2', h: NUM_M}
-  - {t: '&to_layer_0 LANG1', h: NUM_M}
-  - {t: SPACE, h: MAC}
+  - LWIN
   - LEFT ALT
+  - {t: INT5, h: FN_W}
+  - {t: SPACE, h: MOUSE_W}
+  - {t: INT4, h: SCRL_W}
+  - {t: BSPC, h: SCRL_W}
+  - {t: RET, h: NUM_W}
+  - {t: ESC, h: BLE_W}
   MAC:
   - Q
   - W
@@ -84,7 +84,7 @@ layers:
   - {t: SPACE, h: MOUSE_M}
   - {t: '-', h: SCRL_M}
   - ENTER
-  - {t: BACKSPACE, type: held}
+  - BACKSPACE
   - RIGHT SHIFT
   NUM_W:
   - ESCAPE
@@ -124,10 +124,10 @@ layers:
   - LEFT GUI
   - LEFT ALT
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ENTER
-  - BACKSPACE
+  - {t: BACKSPACE, type: held}
   - RIGHT SHIFT
   NUM_M:
   - ESCAPE
@@ -166,14 +166,14 @@ layers:
   - LEFT GUI
   - LEFT GUI
   - LEFT ALT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ENTER
   - BACKSPACE
   - RIGHT SHIFT
   MOUSE_W:
-  - ESCAPE
+  - {t: ESCAPE, type: held}
   - Ctl+Z
   - UP ARROW
   - Ctl+Y
@@ -193,7 +193,7 @@ layers:
   - '&mkp MB1'
   - SCRL_W
   - '&mkp MB2'
-  - {t: '&henkan', type: held}
+  - '&henkan'
   - {t: KP 0, h: LEFT SHIFT}
   - Ctl+Y
   - DOWN ARROW
@@ -213,7 +213,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ENTER
-  - {t: BACKSPACE, type: held}
+  - BACKSPACE
   - '|'
   MOUSE_M:
   - ESCAPE
@@ -256,7 +256,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - ENTER
-  - {t: BACKSPACE, type: held}
+  - BACKSPACE
   - '|'
   SCRL_W:
   - ESCAPE
@@ -279,7 +279,7 @@ layers:
   - '&mkp MB1'
   - {type: held}
   - '&mkp MB2'
-  - {type: held}
+  - {t: ▽, type: trans}
   - LEFT SHIFT
   - Gui+Sft+LEFT ARROW
   - {t: ▽, type: trans}
@@ -299,7 +299,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SCRL_M:
   - ESCAPE
@@ -342,7 +342,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   FN_W:
   - {t: ▽, type: trans}
@@ -381,7 +381,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -472,7 +472,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&bootloader'
-  - BT CLR ALL
+  - {t: BT CLR ALL, type: held}
   BLE_M:
   - F1
   - F2
@@ -514,7 +514,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '&bootloader', type: held}
+  - '&bootloader'
   - BT CLR ALL
 combos:
 - p: [39, 38]
