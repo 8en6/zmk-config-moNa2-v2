@@ -259,39 +259,39 @@ layers:
   - Sft+ENTER
   - {t: ▽, type: trans}
   SCRL_W:
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BT CLR ALL
-  - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sft+7
+  - Sft+2
+  - at
+  - ''
+  - Sft+;
+  - at
+  - Sft+0x87
+  - Sft+8
+  - Sft+9
+  - Sft+5
+  - '@'
+  - ;
+  - Sft+4
+  - at
+  - at
+  - at
+  - Sft+3
+  - '&mkp LCLK'
+  - {t: at, type: held}
+  - '&mkp RCLK'
+  - Sft+-
+  - LSHFT
+  - ''
+  - at
+  - ''
+  - Sft+1
+  - at
+  - at
+  - Sft+6
+  - '-'
+  - Sft+,
+  - Sft+.
+  - Sft+/
   - LCTRL
   - LWIN
   - LALT
@@ -299,42 +299,42 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+ENTER
   - {t: ▽, type: trans}
   SCRL_M:
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BT CLR ALL
-  - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sft+7
+  - Sft+2
+  - at
+  - ''
+  - Sft+;
+  - at
+  - Sft+0x87
+  - Sft+8
+  - Sft+9
+  - Sft+5
+  - '@'
+  - ;
+  - Sft+4
+  - at
+  - at
+  - at
+  - Sft+3
+  - '&mkp LCLK'
+  - at
+  - '&mkp RCLK'
+  - Sft+-
+  - LSHFT
+  - ''
+  - at
+  - ''
+  - Sft+1
+  - at
+  - at
+  - Sft+6
+  - '-'
+  - Sft+,
+  - Sft+.
+  - Sft+/
   - LCTRL
   - LWIN
   - LALT
@@ -342,7 +342,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+ENTER
   - {t: ▽, type: trans}
   FN_W:
   - ''
@@ -431,39 +431,39 @@ layers:
   - Alt+ENTER
   - ''
   BLE_W:
-  - ''
-  - ''
-  - Ctl+Sft+UP
-  - PG UP
-  - ''
-  - ''
-  - Sft+UP
-  - UP
-  - ''
-  - ''
-  - LALT
-  - Ctl+Sft+LEFT
-  - Ctl+Sft+DOWN
-  - Ctl+Sft+RIGHT
-  - HOME
-  - ''
-  - HOME
-  - LEFT
-  - DOWN
-  - RIGHT
-  - LALT
-  - LSHFT
-  - Alt+PG UP
-  - PG DN
-  - Alt+PG DN
-  - END
-  - Gui+Sft+C
-  - ''
-  - END
-  - Sft+LEFT
-  - Sft+DOWN
-  - Sft+RIGHT
-  - LSHFT
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT CLR ALL
+  - BT CLR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - LCTRL
   - LWIN
   - LALT
@@ -471,42 +471,42 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+ENTER
+  - {t: ▽, type: trans}
   - {type: held}
   BLE_M:
-  - ''
-  - ''
-  - Ctl+Sft+UP
-  - PG UP
-  - ''
-  - ''
-  - Sft+UP
-  - UP
-  - ''
-  - ''
-  - LALT
-  - Ctl+Sft+LEFT
-  - Ctl+Sft+DOWN
-  - Ctl+Sft+RIGHT
-  - HOME
-  - ''
-  - HOME
-  - LEFT
-  - DOWN
-  - RIGHT
-  - LALT
-  - LSHFT
-  - Alt+PG UP
-  - PG DN
-  - Alt+PG DN
-  - END
-  - Gui+Sft+C
-  - ''
-  - END
-  - Sft+LEFT
-  - Sft+DOWN
-  - Sft+RIGHT
-  - LSHFT
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT CLR ALL
+  - BT CLR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - LCTRL
   - LWIN
   - LALT
@@ -514,8 +514,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+ENTER
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [39, 38]
   k: {t: ESC, h: MOUSE_W}
