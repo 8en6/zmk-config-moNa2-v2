@@ -261,32 +261,32 @@ layers:
   SCRL_W:
   - Sft+7
   - Sft+2
-  - at
+  - A
   - ''
   - Sft+;
-  - at
+  - A
   - Sft+0x87
   - Sft+8
   - Sft+9
   - Sft+5
-  - '@'
+  - A
   - ;
   - Sft+4
   - at
-  - at
-  - at
+  - A
+  - A
   - Sft+3
   - '&mkp LCLK'
-  - {t: at, type: held}
+  - {t: A, type: held}
   - '&mkp RCLK'
   - Sft+-
   - LSHFT
   - ''
-  - at
+  - A
   - ''
   - Sft+1
-  - at
-  - at
+  - A
+  - A
   - Sft+6
   - '-'
   - Sft+,
@@ -304,32 +304,32 @@ layers:
   SCRL_M:
   - Sft+7
   - Sft+2
-  - at
+  - A
   - ''
   - Sft+;
-  - at
+  - A
   - Sft+0x87
   - Sft+8
   - Sft+9
   - Sft+5
-  - '@'
+  - A
   - ;
   - Sft+4
   - at
-  - at
-  - at
+  - A
+  - A
   - Sft+3
   - '&mkp LCLK'
-  - at
+  - A
   - '&mkp RCLK'
   - Sft+-
   - LSHFT
   - ''
-  - at
+  - A
   - ''
   - Sft+1
-  - at
-  - at
+  - A
+  - A
   - Sft+6
   - '-'
   - Sft+,
