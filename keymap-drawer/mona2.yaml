@@ -110,7 +110,7 @@ layers:
   - LALT
   - Sft+;
   - '-'
-  - Sft+JP COLON
+  - 'Sft+:'
   - /
   - .
   - Sft+-
@@ -153,7 +153,7 @@ layers:
   - LALT
   - Sft+;
   - '-'
-  - Sft+JP COLON
+  - 'Sft+:'
   - /
   - .
   - Sft+-
