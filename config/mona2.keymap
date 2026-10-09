@@ -251,10 +251,10 @@ sensor-bindings =
 num_win {
 display-name = "NUM_W";
 bindings = <
-&kp ESCAPE &kp EXCLAMATION &kp AT_SIGN &kp HASH &kp DOLLAR &kp EQUAL &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp ASTERISK
-&kp TAB &kp PERCENT &kp CARET &kp AMPERSAND &kp ASTERISK &kp PERCENT &kp NUMBER_0 &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp MINUS
-&kp PIPE &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_BRACKET &kp RIGHT_BRACKET &trans &kp PLUS &kp DOT &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp SLASH
-&kp LCTRL &kp LEFT_GUI &kp LEFT_ALT &trans &trans &trans &kp ENTER &kp BACKSPACE &kp RIGHT_SHIFT
+&kp N1       &kp N2      &kp N3           &kp N4        &kp N5                                  &none         &kp LS(UP)       &kp UP            &none          &none
+&kp N6       &kp N7      &kp N8           &kp N9        &kp N0                        &none     &kp HOME      &kp LEFT         &kp DOWN          &kp RIGHT      &kp LALT
+&kp LS(SEMI) &kp MINUS   &kp LS(JP_COLON) &kp FSLH      &kp DOT  &kp LS(MINUS)        &none     &kp END       &kp LS(LEFT)     &kp LS(DOWN)      &kp LS(RIGHT)  &kp LSHFT
+&kp LCTRL    &kp LWIN    &kp LALT         &macro_parens &kp F10  &kp F2                         &trans        &kp LA(ENTER)                                     &none
 >;
 
 sensor-bindings = <&rsr_default>;
@@ -263,10 +263,10 @@ sensor-bindings = <&rsr_default>;
 num_mac {
 display-name = "NUM_M";
 bindings = <
-&kp ESCAPE &kp EXCLAMATION &kp AT_SIGN &kp HASH &kp DOLLAR &kp EQUAL &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp ASTERISK
-&kp TAB &kp PERCENT &kp CARET &kp AMPERSAND &kp ASTERISK &kp PERCENT &kp NUMBER_0 &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp MINUS
-&kp PIPE &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_BRACKET &kp RIGHT_BRACKET &trans &kp PLUS &kp DOT &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp SLASH
-&kp LEFT_GUI &kp LEFT_GUI &kp LEFT_ALT &trans &trans &trans &kp ENTER &kp BACKSPACE &kp RIGHT_SHIFT
+&kp N1       &kp N2      &kp N3           &kp N4        &kp N5                                  &none         &kp LS(UP)       &kp UP            &none          &none
+&kp N6       &kp N7      &kp N8           &kp N9        &kp N0                        &none     &kp HOME      &kp LEFT         &kp DOWN          &kp RIGHT      &kp LALT
+&kp LS(SEMI) &kp MINUS   &kp LS(JP_COLON) &kp FSLH      &kp DOT  &kp LS(MINUS)        &none     &kp END       &kp LS(LEFT)     &kp LS(DOWN)      &kp LS(RIGHT)  &kp LSHFT
+&kp LCTRL    &kp LWIN    &kp LALT         &macro_parens &kp F10  &kp F2                         &trans        &kp LA(ENTER)                                     &none
 >;
 
 sensor-bindings = <&rsr_default>;
