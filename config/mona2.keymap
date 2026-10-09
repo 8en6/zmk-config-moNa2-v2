@@ -240,7 +240,7 @@ bindings = <
 &lt_slow 4 Q             &kp W         &kp E    &kp R          &kp T                                                          &kp Y        &kp U  &kp I      &lt_slow 4 O    &kp P
 &mt_tap LALT A           &kp S         &kp D    &kp F          &kp G                                  &kp F13                 &kp H        &kp J  &lt_slow 6 K      &lt_slow 4 L    &mt_tap LALT MINUS
 &mt_tap LSHFT Z          &kp X         &kp C    &kp V          &kp B        &kp F14                   &kp F15                 &kp N        &kp M  &kp COMMA  &kp DOT  &mt_tap LSHFT SLASH
-&kp LCTRL         &kp LWIN      &kp LEFT_ALT  &lt 8 INT5  &lt 4 SPACE  &lt 6 INT4                &lt_bspc 6 BSPC  &lt 2 RET                                                     &lt 10 ESC
+&kp LGUI         &kp LWIN      &kp LEFT_ALT  &lt 8 INT5  &lt 4 SPACE  &lt 6 INT4                &lt_bspc 6 BSPC  &lt 2 RET                                                     &lt 10 ESC
 >;
 
 sensor-bindings =
@@ -266,7 +266,7 @@ bindings = <
 &kp N1       &kp N2      &kp N3           &kp N4        &kp N5                                  &none         &kp LS(UP)       &kp UP            &none          &none
 &kp N6       &kp N7      &kp N8           &kp N9        &kp N0                        &none     &kp HOME      &kp LEFT         &kp DOWN          &kp RIGHT      &kp LALT
 &kp LS(SEMI) &kp MINUS   &kp LS(COLON)    &kp FSLH      &kp DOT  &kp LS(MINUS)        &none     &kp END       &kp LS(LEFT)     &kp LS(DOWN)      &kp LS(RIGHT)  &kp LSHFT
-&kp LCTRL    &kp LWIN    &kp LALT         &macro_parens &kp F10  &kp F2                         &trans        &kp LA(ENTER)                                     &none
+&kp LGUI    &kp LWIN    &kp LALT         &macro_parens &kp F10  &kp F2                         &trans        &kp LA(ENTER)                                     &none
 >;
 
 sensor-bindings = <&rsr_default>;
@@ -290,7 +290,7 @@ bindings = <
 &none      &kp TAB        &kp LC(UP)     &kp LG(UP)     &none                                  &trans     &trans     &mkp MB3    &trans       &trans
 &kp LALT   &kp LC(LEFT)   &kp LC(DOWN)   &kp LC(RIGHT)  &none                       &kp LC(X)  &kp LC(C)  &mkp LCLK  &mkp RCLK   &mkp RCLK    &kp LALT
 &kp LSHFT  &kp LG(LEFT)   &kp LG(DOWN)   &kp LG(RIGHT)  &none    &kp LG(LC(T))      &kp LG(V)  &kp LC(V)  &kp LC(Z)  &kp LC(Y)   &none        &kp LSHFT
-&kp LCTRL  &kp LWIN       &kp LALT       &trans         &trans   &trans             &kp DEL    &kp LS(ENTER)                                  &trans
+&kp LGUI  &kp LWIN       &kp LALT       &trans         &trans   &trans             &kp DEL    &kp LS(ENTER)                                  &trans
 >;
 
 sensor-bindings = <&rsr_default>;
@@ -314,7 +314,7 @@ bindings = <
 &kp LS(N7)    &kp LS(N2)    &kp A      &none          &kp LS(SEMI)                                        &kp A       &kp LS(0x87) &kp LS(N8)       &kp LS(N9)  &kp LS(N5)
 &kp A        &kp SEMI      &kp LS(N4)  &kp A         &kp A                                 &kp A       &kp LS(N3)   &mkp LCLK    &kp A           &mkp RCLK   &kp LS(MINUS)
 &kp LSHFT     &none         &kp A      &none          &kp LS(N1)       &kp A                &kp A       &kp LS(N6)   &kp MINUS    &kp LS(COMMA)    &kp LS(DOT) &kp LS(FSLH)
-&kp LCTRL     &kp LWIN      &kp LALT    &trans         &trans          &trans                 &trans       &kp LC(ENTER)                                          &trans
+&kp LGUI     &kp LWIN      &kp LALT    &trans         &trans          &trans                 &trans       &kp LC(ENTER)                                          &trans
 >;
 
 sensor-bindings = <&rsr_default>;
@@ -336,7 +336,7 @@ bindings = <
 &none      &none                &kp LC(LS(UP))    &kp PG_UP           &none                              &none           &kp LS(UP)       &kp UP            &none          &none
 &kp LALT   &kp LC(LS(LEFT))     &kp LC(LS(DOWN))  &kp LC(LS(RIGHT))   &kp HOME                  &none    &kp HOME        &kp LEFT         &kp DOWN          &kp RIGHT      &kp LALT
 &kp LSHFT  &kp LA(PG_UP)        &kp PG_DN         &kp LA(PG_DN)       &kp END   &kp LG(LS(C))   &none    &kp END         &kp LS(LEFT)     &kp LS(DOWN)      &kp LS(RIGHT)  &kp LSHFT
-&kp LCTRL  &kp LWIN             &kp LALT          &trans              &trans    &trans          &trans   &kp LA(ENTER)                                                     &none
+&kp LGUI  &kp LWIN             &kp LALT          &trans              &trans    &trans          &trans   &kp LA(ENTER)                                                     &none
 >;
 };
 
@@ -356,7 +356,7 @@ bindings = <
 &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4                          &trans  &trans  &trans  &trans  &trans
 &trans          &trans        &trans        &trans          &trans                        &trans  &trans  &trans  &trans  &trans  &trans
 &bt BT_CLR_ALL  &bt BT_CLR    &trans        &trans          &trans          &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL       &kp LWIN      &kp LALT      &trans          &trans          &trans        &trans  &trans                          &trans
+&kp LGUI       &kp LWIN      &kp LALT      &trans          &trans          &trans        &trans  &trans                          &trans
 >;
 };
 };
