@@ -78,7 +78,7 @@ layers:
   - .
   - {t: /, h: LSHFT}
   - LGUI
-  - LWIN
+  - Gui+H
   - LEFT ALT
   - {t: INT5, h: FN_W}
   - {t: SPACE, h: MOUSE_W}
@@ -164,7 +164,7 @@ layers:
   - Sft+RIGHT
   - LSHFT
   - LGUI
-  - LWIN
+  - Gui+H
   - LALT
   - '&macro_parens'
   - F10
@@ -250,7 +250,7 @@ layers:
   - ''
   - LSHFT
   - LGUI
-  - LWIN
+  - Gui+H
   - LALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -336,7 +336,7 @@ layers:
   - Sft+.
   - Sft+/
   - LGUI
-  - LWIN
+  - Gui+H
   - LALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -422,7 +422,7 @@ layers:
   - Sft+RIGHT
   - LSHFT
   - LGUI
-  - LWIN
+  - Gui+H
   - LALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -457,7 +457,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+L
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -500,7 +500,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+L
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -508,7 +508,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LGUI
-  - LWIN
+  - Gui+H
   - LALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
