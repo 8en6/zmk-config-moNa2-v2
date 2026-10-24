@@ -237,6 +237,7 @@ zfoldZ: zfoldZ {
 compatible = "zmk,behavior-tap-dance";
 label = "ZFOLDZ";
 #binding-cells = <0>;
+tapping-term-ms = <200>;
 bindings = <&zfold LEFT_SHIFT Z>, <&kp LS(Z)>;
 };
 };
@@ -249,7 +250,7 @@ display-name = "WIN";
 bindings = <
 &lt_slow 4 Q             &kp W         &kp E    &kp R          &kp T                                                          &kp Y        &kp U  &kp I      &lt_slow 4 O    &kp P
 &mt_tap LALT A           &kp S         &kp D    &kp F          &kp G                                  &kp JP_CARET                 &kp H        &kp J  &lt_slow 6 K      &lt_slow 4 L    &mt_tap LALT MINUS
-&mt_tap LSHFT Z          &kp X         &kp C    &kp V          &kp B        &kp JP_LBRACKET                   &kp JP_RBRACKET                 &kp N        &kp M  &kp COMMA  &kp DOT  &mt_tap LSHFT SLASH
+&zfoldZ          &kp X         &kp C    &kp V          &kp B        &kp JP_LBRACKET                   &kp JP_RBRACKET                 &kp N        &kp M  &kp COMMA  &kp DOT  &mt_tap LSHFT SLASH
 &kp LCTRL         &kp LWIN      &kp LEFT_ALT  &lt 8 INT5  &lt 4 SPACE  &lt 6 INT4                &lt_bspc 6 BSPC  &lt 2 RET                                                     &lt 10 ESC
 >;
 
@@ -263,7 +264,7 @@ display-name = "MAC";
 bindings = <
 &lt_slow 5 Q             &kp W         &kp E    &kp R          &kp T                                                          &kp Y        &kp U  &kp I      &lt_slow 5 O    &kp P
 &mt_tap LALT A           &kp S         &kp D    &kp F          &kp G                                  &kp JP_CARET                 &kp H        &kp J  &lt_slow 7 K      &lt_slow 5 L    &mt_tap LALT MINUS
-&mt_tap LSHFT Z          &kp X         &kp C    &kp V          &kp B        &kp JP_LBRACKET                   &kp JP_RBRACKET                 &kp N        &kp M  &kp COMMA  &kp DOT  &mt_tap LSHFT SLASH
+&zfoldZ          &kp X         &kp C    &kp V          &kp B        &kp JP_LBRACKET                   &kp JP_RBRACKET                 &kp N        &kp M  &kp COMMA  &kp DOT  &mt_tap LSHFT SLASH
 &kp LGUI         &kp LG(H)      &kp LEFT_ALT  &lt 9 INT5  &lt 5 SPACE  &lt 7 INT4                &lt_bspc 7 BSPC  &lt 3 RET                                                     &lt 11 ESC
 >;
 
