@@ -16,19 +16,19 @@ layers:
   - D
   - F
   - G
-  - F13
+  - '='
   - H
   - J
   - {t: K, h: SCRL_W}
   - {t: L, h: MOUSE_W}
   - {t: '-', h: LALT}
-  - {t: Z, h: LSHFT}
+  - '&zfoldZ'
   - X
   - C
   - V
   - B
-  - F14
-  - F15
+  - ']'
+  - '#'
   - N
   - M
   - ','
@@ -44,7 +44,7 @@ layers:
   - {t: RET, h: NUM_W}
   - {t: ESC, h: BLE_W}
   MAC:
-  - {t: Q, h: MOUSE_W}
+  - {t: Q, h: MOUSE_M}
   - W
   - E
   - R
@@ -52,26 +52,26 @@ layers:
   - Y
   - U
   - I
-  - {t: O, h: MOUSE_W}
+  - {t: O, h: MOUSE_M}
   - P
   - {t: A, h: LALT}
   - S
   - D
   - F
   - G
-  - F13
+  - '='
   - H
   - J
-  - {t: K, h: SCRL_W}
-  - {t: L, h: MOUSE_W}
+  - {t: K, h: SCRL_M}
+  - {t: L, h: MOUSE_M}
   - {t: '-', h: LALT}
-  - {t: Z, h: LSHFT}
+  - '&zfoldZ'
   - X
   - C
   - V
   - B
-  - F14
-  - F15
+  - ']'
+  - '#'
   - N
   - M
   - ','
@@ -80,12 +80,12 @@ layers:
   - LGUI
   - Gui+H
   - LEFT ALT
-  - {t: INT5, h: FN_W}
-  - {t: SPACE, h: MOUSE_W}
-  - {t: INT4, h: SCRL_W}
-  - {t: BSPC, h: SCRL_W}
-  - {t: RET, h: NUM_W}
-  - {t: ESC, h: BLE_W}
+  - {t: INT5, h: FN_M}
+  - {t: SPACE, h: MOUSE_M}
+  - {t: INT4, h: SCRL_M}
+  - {t: BSPC, h: SCRL_M}
+  - {t: RET, h: NUM_M}
+  - {t: ESC, h: BLE_M}
   NUM_W:
   - '1'
   - '2'
@@ -110,7 +110,7 @@ layers:
   - LALT
   - Sft+;
   - '-'
-  - 'Sft+:'
+  - Sft+'
   - /
   - .
   - Sft+-
@@ -153,7 +153,7 @@ layers:
   - LALT
   - Sft+;
   - '-'
-  - 'Sft+:'
+  - Sft+'
   - /
   - .
   - Sft+-
@@ -170,7 +170,7 @@ layers:
   - F10
   - F2
   - {t: ▽, type: trans}
-  - Alt+ENTER
+  - {t: Alt+ENTER, type: held}
   - ''
   MOUSE_W:
   - {type: held}
@@ -216,7 +216,7 @@ layers:
   - Sft+ENTER
   - {t: ▽, type: trans}
   MOUSE_M:
-  - ''
+  - {type: held}
   - TAB
   - Ctl+UP
   - Gui+UP
@@ -261,32 +261,32 @@ layers:
   SCRL_W:
   - Sft+7
   - Sft+2
-  - A
+  - INT3
   - ''
   - Sft+;
-  - A
-  - Sft+0x87
+  - INT3
+  - Sft+INT1
   - Sft+8
   - Sft+9
   - Sft+5
-  - A
+  - '['
   - ;
   - Sft+4
-  - A
-  - A
-  - A
+  - ']'
+  - '#'
+  - Gui+Sft+S
   - Sft+3
   - '&mkp LCLK'
-  - {t: A, type: held}
+  - {t: Sft+', type: held}
   - '&mkp RCLK'
   - Sft+-
   - LSHFT
   - ''
-  - A
+  - ''''
   - ''
   - Sft+1
-  - A
-  - A
+  - Sft+]
+  - Sft+#
   - Sft+6
   - '-'
   - Sft+,
@@ -304,32 +304,32 @@ layers:
   SCRL_M:
   - Sft+7
   - Sft+2
-  - A
+  - INT3
   - ''
   - Sft+;
-  - A
-  - Sft+0x87
+  - INT3
+  - Sft+INT1
   - Sft+8
   - Sft+9
   - Sft+5
-  - A
+  - '['
   - ;
   - Sft+4
-  - A
-  - A
-  - A
+  - ']'
+  - '#'
+  - Gui+Sft+S
   - Sft+3
   - '&mkp LCLK'
-  - A
+  - {t: Sft+', type: held}
   - '&mkp RCLK'
   - Sft+-
   - LSHFT
   - ''
-  - A
+  - ''''
   - ''
   - Sft+1
-  - A
-  - A
+  - Sft+]
+  - Sft+#
   - Sft+6
   - '-'
   - Sft+,
@@ -424,7 +424,7 @@ layers:
   - LGUI
   - Gui+H
   - LALT
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -515,7 +515,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
 combos:
 - p: [39, 38]
   k: {t: ESC, h: MOUSE_W}
