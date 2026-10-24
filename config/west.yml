@@ -14,8 +14,10 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: zettaface  # <-- Input Processor Keybind
       url-base: https://github.com/zettaface
-    - name: kot149       # <-- Mouse Gesture (upstream)
+    - name: kot149       # <-- Mouse Gesture + Scroll Snap
       url-base: https://github.com/kot149
+    - name: 8en6         # <-- roBa と共有する慣性モジュール
+      url-base: https://github.com/8en6
     - name: shakushakupanda  # <-- mouse gesture RPC module
       url-base: https://github.com/shakushakupanda
   projects:
@@ -136,5 +138,13 @@ manifest:
     - name: zmk-module-mouse-gesture-rpc
       remote: shakushakupanda
       revision: main
+    # ── roBa 方式: 軸方向固定 + 縦横共通の慣性 ──────────────
+    - name: zmk-scroll-snap
+      remote: kot149
+      revision: v1
+    - name: zmk-input-processor-scroll-inertia
+      remote: 8en6
+      revision: main
+
   self:
     path: config

@@ -3,6 +3,7 @@
    (runtime-input-processor.dtsi が modifiers.h 経由で RC(keycode) を再定義するため) */
 #include <input/processors/runtime-input-processor.dtsi>
 #include <input/processors.dtsi>
+#include <scroll-snap.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <dt-bindings/zmk/mouse-gesture.h>
 
@@ -119,8 +120,81 @@
 
 };
 
+/* roBa と同じ軸固定。スクロール変換後 (WHEEL/HWHEEL) に適用 */
+&zip_scroll_snap {
+    x-threshold = <1 1>;
+    y-threshold = <1 1>;
+    require-n-samples = <4>;
+    lock-duration-ms = <200>;
+    lock-for-next-n-events = <8>;
+    idle-reset-timeout-ms = <180>;
+};
+
+/* roBa の縦横共通パラメータ。スクロールの倍率は moNa2 の 1/100 に合わせる。
+ * Win/Mac を別インスタンスにし、レイヤーを抜けたとき慣性を停止させる。 */
+ / {
+    mona2_scroll_inertia_win: mona2_scroll_inertia_win {
+        compatible = "zmk,input-processor-scroll-inertia";
+        #input-processor-cells = <0>;
+        axis = <0>;
+        layer = <6>;
+        scale = <1>;
+        scale-div = <100>;
+        start = <20>;
+        move = <10>;
+        min-events = <3>;
+        decay-fast = <990>;
+        friction = <25>;
+        stop = <5>;
+    };
+
+    mona2_scroll_inertia_mac: mona2_scroll_inertia_mac {
+        compatible = "zmk,input-processor-scroll-inertia";
+        #input-processor-cells = <0>;
+        axis = <0>;
+        layer = <7>;
+        scale = <1>;
+        scale-div = <100>;
+        start = <20>;
+        move = <10>;
+        min-events = <3>;
+        decay-fast = <990>;
+        friction = <25>;
+        stop = <5>;
+    };
+};
+
 &trackball_central_listener {
     status = "okay";
     device = <&trackball_central>;
-    input-processors = <&mg &mouse_runtime_input_processor &scroll_runtime_input_processor &zip_scroll_scaler 1 100 &inertial_scroll>;
+    /* 通常時: 従来の DYA-studio 入力処理とマウスジェスチャーを維持。
+     * 既存の &inertial_scroll はスクロールレイヤー以外でのみ残し、
+     * scroll layers で重複慣性にならないようにする。
+     */
+    input-processors = <&mg &mouse_runtime_input_processor &scroll_runtime_input_processor
+                        &zip_scroll_scaler 1 100 &inertial_scroll>;
+
+    scroll_win_override {
+        layers = <6>;
+        input-processors = <
+            &mg
+            &mouse_runtime_input_processor
+            &scroll_runtime_input_processor
+            &zip_scroll_snap
+            &mona2_scroll_inertia_win
+            &zip_scroll_scaler 1 100
+        >;
+    };
+
+    scroll_mac_override {
+        layers = <7>;
+        input-processors = <
+            &mg
+            &mouse_runtime_input_processor
+            &scroll_runtime_input_processor
+            &zip_scroll_snap
+            &mona2_scroll_inertia_mac
+            &zip_scroll_scaler 1 100
+        >;
+    };
 };
