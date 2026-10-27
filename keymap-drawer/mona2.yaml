@@ -22,7 +22,7 @@ layers:
   - {t: K, h: SCRL_W}
   - {t: L, h: MOUSE_W}
   - {t: '-', h: LALT}
-  - '&zfoldZ'
+  - {t: '&z_tapdance', h: LSHFT}
   - X
   - C
   - V
@@ -65,7 +65,7 @@ layers:
   - {t: K, h: SCRL_M}
   - {t: L, h: MOUSE_M}
   - {t: '-', h: LALT}
-  - '&zfoldZ'
+  - {t: '&z_tapdance', h: LSHFT}
   - X
   - C
   - V
