@@ -143,6 +143,18 @@ label = "HENKAN";
 };
 
 behaviors {
+        // A専用: 単独保持時のAlt確定を200msから320msへ遅らせる。
+        // 他のキーとの同時打鍵では元のtap-preferredを維持する。
+        a_alt_slow: a_alt_slow {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <320>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <125>;
+        };
+
         // 高速タイピング用のMod-Tap設定（Home Row Mods用）
         mt_tap: mod_tap_preferred {
             compatible = "zmk,behavior-hold-tap";
@@ -221,24 +233,23 @@ display-name = "Toggle Layer Off";
 toggle-mode = "off";
 };
 
-zfold: zfold {
-compatible = "zmk,behavior-hold-tap";
-label = "ZFOLD";
-bindings = <&kp>, <&kp>;
-
-#binding-cells = <2>;
-tapping-term-ms = <300>;
-flavor = "hold-preferred";
-quick-tap-ms = <150>;
-hold-while-undecided;
+// Hold-Tapは外側に置き、他キー押下で即座にShiftを優先確定
+z_tapdance: z_tapdance {
+    compatible = "zmk,behavior-tap-dance";
+    label = "Z_TAPDANCE";
+    #binding-cells = <0>;
+    tapping-term-ms = <200>;
+    bindings = <&kp Z>, <&kp LS(Z)>;
 };
 
-zfoldZ: zfoldZ {
-compatible = "zmk,behavior-tap-dance";
-label = "ZFOLDZ";
-#binding-cells = <0>;
-tapping-term-ms = <200>;
-bindings = <&zfold LEFT_SHIFT Z>, <&kp LS(Z)>;
+z_shift: z_shift {
+    compatible = "zmk,behavior-hold-tap";
+    label = "Z_SHIFT";
+    #binding-cells = <2>;
+    bindings = <&kp>, <&z_tapdance>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <170>;
+    quick-tap-ms = <0>;
 };
 };
 
@@ -249,8 +260,8 @@ win_layer {
 display-name = "WIN";
 bindings = <
 &lt_slow 4 Q             &kp W         &kp E    &kp R          &kp T                                                          &kp Y        &kp U  &kp I      &lt_slow 4 O    &kp P
-&mt_tap LALT A           &kp S         &kp D    &kp F          &kp G                                  &kp JP_CARET                 &kp H        &kp J  &lt_slow 6 K      &lt_slow 4 L    &mt_tap LALT MINUS
-&zfoldZ          &kp X         &kp C    &kp V          &kp B        &kp JP_LBRACKET                   &kp JP_RBRACKET                 &kp N        &kp M  &kp COMMA  &kp DOT  &mt_tap LSHFT SLASH
+&a_alt_slow LALT A           &kp S         &kp D    &kp F          &kp G                                  &kp JP_CARET                 &kp H        &kp J  &lt_slow 6 K      &lt_slow 4 L    &mt_tap LALT MINUS
+&z_shift LSHFT 0          &kp X         &kp C    &kp V          &kp B        &kp JP_LBRACKET                   &kp JP_RBRACKET                 &kp N        &kp M  &kp COMMA  &kp DOT  &mt_tap LSHFT SLASH
 &kp LCTRL         &kp LWIN      &kp LEFT_ALT  &lt 8 INT5  &lt 4 SPACE  &lt 6 INT4                &lt_bspc 6 BSPC  &lt 2 RET                                                     &lt 10 ESC
 >;
 
@@ -263,8 +274,8 @@ mac_layer {
 display-name = "MAC";
 bindings = <
 &lt_slow 5 Q             &kp W         &kp E    &kp R          &kp T                                                          &kp Y        &kp U  &kp I      &lt_slow 5 O    &kp P
-&mt_tap LALT A           &kp S         &kp D    &kp F          &kp G                                  &kp JP_CARET                 &kp H        &kp J  &lt_slow 7 K      &lt_slow 5 L    &mt_tap LALT MINUS
-&zfoldZ          &kp X         &kp C    &kp V          &kp B        &kp JP_LBRACKET                   &kp JP_RBRACKET                 &kp N        &kp M  &kp COMMA  &kp DOT  &mt_tap LSHFT SLASH
+&a_alt_slow LALT A           &kp S         &kp D    &kp F          &kp G                                  &kp JP_CARET                 &kp H        &kp J  &lt_slow 7 K      &lt_slow 5 L    &mt_tap LALT MINUS
+&z_shift LSHFT 0          &kp X         &kp C    &kp V          &kp B        &kp JP_LBRACKET                   &kp JP_RBRACKET                 &kp N        &kp M  &kp COMMA  &kp DOT  &mt_tap LSHFT SLASH
 &kp LGUI         &kp LG(H)      &kp LEFT_ALT  &lt 9 INT5  &lt 5 SPACE  &lt 7 INT4                &lt_bspc 7 BSPC  &lt 3 RET                                                     &lt 11 ESC
 >;
 
