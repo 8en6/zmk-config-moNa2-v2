@@ -120,6 +120,18 @@
 
 };
 
+/* roBa・torabo-tsuki同様、横スクロール成分だけ50%にする。
+ * 処理順: 方向固定 -> 横方向1/2 -> 慣性 -> 全体1/100。 */
+ / {
+    mona2_horizontal_scroll_scaler: mona2_horizontal_scroll_scaler {
+        compatible = "zmk,input-processor-scaler";
+        #input-processor-cells = <2>;
+        type = <INPUT_EV_REL>;
+        codes = <INPUT_REL_HWHEEL>;
+        track-remainders;
+    };
+};
+
 /* roBa と同じ軸固定。スクロール変換後 (WHEEL/HWHEEL) に適用 */
 &zip_scroll_snap {
     x-threshold = <1 1>;
@@ -181,6 +193,7 @@
             &mouse_runtime_input_processor
             &scroll_runtime_input_processor
             &zip_scroll_snap
+            &mona2_horizontal_scroll_scaler 1 2
             &mona2_scroll_inertia_win
             &zip_scroll_scaler 1 100
         >;
@@ -193,6 +206,7 @@
             &mouse_runtime_input_processor
             &scroll_runtime_input_processor
             &zip_scroll_snap
+            &mona2_horizontal_scroll_scaler 1 2
             &mona2_scroll_inertia_mac
             &zip_scroll_scaler 1 100
         >;
