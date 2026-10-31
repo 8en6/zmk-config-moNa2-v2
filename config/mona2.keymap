@@ -404,6 +404,8 @@ bindings = <
 &bt BT_CLR_ALL  &bt BT_CLR    &trans        &trans          &trans          &kp LG(L)        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LGUI       &kp LG(H)      &kp LALT      &trans          &trans          &trans        &trans  &trans                          &trans
 >;
+};
+
 z_next_uppercase {
     bindings = <
 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
@@ -413,6 +415,5 @@ z_next_uppercase {
     >;
 };
 
-};
 };
 };
