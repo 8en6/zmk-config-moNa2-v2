@@ -37,9 +37,9 @@ layers:
   - LCTRL
   - LWIN
   - LEFT ALT
-  - {t: INT5, h: FN_W}
+  - {t: LANG2, h: FN_W}
   - {t: SPACE, h: MOUSE_W}
-  - {t: INT4, h: SCRL_W}
+  - {t: LANG1, h: SCRL_W}
   - {t: BSPC, h: SCRL_W}
   - {t: RET, h: NUM_W}
   - {t: ESC, h: BLE_W}
@@ -80,9 +80,9 @@ layers:
   - LGUI
   - Gui+H
   - LEFT ALT
-  - {t: INT5, h: FN_M}
+  - {t: LANG2, h: FN_M}
   - {t: SPACE, h: MOUSE_M}
-  - {t: INT4, h: SCRL_M}
+  - {t: LANG1, h: SCRL_M}
   - {t: BSPC, h: SCRL_M}
   - {t: RET, h: NUM_M}
   - {t: ESC, h: BLE_M}
